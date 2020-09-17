@@ -1,0 +1,27 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+header
+{
+  background-color: red;
+}
+.side
+{
+  width: 200px;
+  float: left;
+}
+.main
+{
+  margin: 2%;
+  width: 100%;
+  margin-left: 300px;
+  padding: 2%;
+}
+.container
+{
+  width: 100%;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #000;
+}

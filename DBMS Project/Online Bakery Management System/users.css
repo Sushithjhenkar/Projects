@@ -1,0 +1,214 @@
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: #cedbd2;
+  margin-bottom: 100px;
+}
+header
+{
+  background-color: red;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  list-style-type: none;
+}
+header ul li
+{
+  text-decoration: none;
+  padding: 0;
+  list-style-type: none;
+}
+header ul li img
+{
+  height: 100px;
+  margin-left: 50px;
+  list-style-type: none;
+}
+.main
+{
+  float: left;
+  margin-top: 150px;
+  margin-left: 260px;
+  margin-bottom: 100px;
+}
+
+.side
+{
+  width: 250px;
+  height: 100vh;
+  float: left;
+  position: fixed;
+  background-color:red;
+  margin-top:135px;
+}
+
+.side ul li a
+{
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+
+.side .nav
+{
+  margin-top: 70px;
+  margin-left: 0;
+}
+
+.side .nav ul li
+{
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+.side .nav ul li:hover
+{
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.side .nav ul li a
+{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*
+.side .row
+{
+  overflow: hidden;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #f6f6f6;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+} */
+
+
+/* drop down css */
+.dropbtn {
+  background-color: #f9f9f9;
+  color: #000;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  margin-left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: #f9f9f9;
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.dropdown-content a:hover
+ {
+   background-color: #f1f1f1;
+ }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f1f1f1;
+}
+
+/* main body css */
+.main
+{
+  font-size: 20px;
+}
+
+.main form
+{
+  width: 100%;
+}
+
+.main input
+{
+  width: 100px;
+  height: 30px;
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 20px;
+  padding: 10px;
+  background: transparent;
+}
+
+.main select
+{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.main th
+{
+  font-size: 30px;
+}
+
+.main .btn button
+{
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  font-size: 30px;
+  border: none;
+  border-radius: 15px;
+  float: right;
+}
+
+.main .btn button:hover
+{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.main .add button
+{
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  font-size: 30px;
+  border: none;
+  border-radius: 15px;
+  float: right;
+}
+
+.main .add button:hover
+{
+  cursor: pointer;
+  opacity: 0.7;
+}

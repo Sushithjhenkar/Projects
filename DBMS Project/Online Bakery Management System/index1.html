@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 50px;
+  text-align: center;
+background-image:url(HomePage_Header.png);
+background-size:cover;
+background-position: center;
+height: auto;
+}
+
+.header h1 {
+  font-size: 50px;
+  color:black;
+}
+/* Slideshow container */
+.slideshow-container {
+  width:1000px;
+  position: relative;
+  margin-top:50px;
+  margin-left:10px;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  float:right;
+}
+.column {
+  float:right;
+  width: 40%;
+  padding: 15px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 50px;
+  background-color:inherit;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 200px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>&nbsp&nbsp</h1>
+  </div>
+  <div class="row">
+  <div class="column">
+     <h2>About us:</h2>
+     <p>The 69 BAKES Bakery is an Indian-style bakery founded in 2004 to bring the authentic taste of American home baking to India. The company opened its first branch on Mumbai in 2004 and has since launched a further five branches across India. It also has a franchise presence in the Middle East with two branches already operating in Dubai.There is no secret to what makes 69 BAKES Bakery’s cakes and other treats taste so good.
+No matter where a 69 BAKES Bakery branch pops up, customers can always be assured of a welcoming environment, friendly staff and the delightful smells and tastes of authentic American home baking.FRESH Bakery is known as bakery unique for our square cupcakes and cakes. We take pride in using natural ingredients in our cupcakes, cakes and desserts.
+Our treats are as deliciously wholesome as they are beautifully decorated. Choose from our signature cupcakes, weekly and holiday specials or custom created desserts.Our vision is to create upscale, quick-serve bakery with a focus on simple and satisfying souther style desserts and baked goodsFRESH Bakery's philosophy is to offer simple and delicious desserts that are easily accessible to clients via location or delivery options. Our ingredients are high quality; each dessert is carefully made with only the finest, all-natural ingredients.</p>
+<br><br><h2 style="float:centre">Login Now to order</h2>
+<button class="button"style="vertical-align:middle"><a href="login.php"</a><span> Login </span></button>
+   </div>
+   </div>
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="index1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="index2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="index3.jpg" style="width:100%">
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+</body>
+</html>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1300);
+}
+</script>
+
+</body>
+</html>

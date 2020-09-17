@@ -1,0 +1,35 @@
+body
+{
+  background-color: black;
+  background-image: url(Login_BG2.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+  margin: 0;
+}
+.row
+{
+  width: 200px;
+  margin-top: 300px;
+  margin-left:1000px;
+  border-radius: 80px;
+  padding: 60px;
+  background-color: white;
+}
+
+.p
+{
+  margin-left: 90px;
+}
+.h1
+{
+  margin-left: 25px;
+  color: black;
+  text-decoration:underline;
+}
+.position
+{
+  margin-left: 80px;
+  padding: 13px;
+}

@@ -1,0 +1,14 @@
+header
+{
+  background-color: red;
+}
+
+.side
+{
+  float: left;
+}
+
+.main
+{
+  margin-left: 300px;
+}
